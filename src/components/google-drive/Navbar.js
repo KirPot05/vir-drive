@@ -1,10 +1,19 @@
-import React from "react"
-import { Navbar, Nav } from "react-bootstrap"
-import { Link } from "react-router-dom"
+import React from "react";
+import { Navbar, Nav } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export default function NavbarComponent() {
   return (
-    <Navbar bg="dark" variant="dark" expand="sm">
+    <Navbar
+      bg="dark"
+      variant="dark"
+      expand="sm"
+      style={{
+        position: "sticky",
+        top: "0",
+        zIndex: "10",
+      }}
+    >
       <Navbar.Brand as={Link} to="/">
         Vir Drive
       </Navbar.Brand>
@@ -14,5 +23,5 @@ export default function NavbarComponent() {
         </Nav.Link>
       </Nav>
     </Navbar>
-  )
+  );
 }
