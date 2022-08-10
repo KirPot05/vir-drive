@@ -12,10 +12,10 @@ export default function Folder({ folder }) {
         state: { folder: folder },
       }}
       variant="outline-dark"
-      className="text-truncate w-100"
+      className="text-truncate w-100 d-flex flex-column align-items-center"
       as={Link}
     >
-      <FontAwesomeIcon icon={faFolder} className="mr-2" />
+      <FontAwesomeIcon icon={faFolder} className="mr-2 mb-2" size="3x" />
       {folder.name}
     </Button>
   )

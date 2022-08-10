@@ -42,8 +42,8 @@ export default function AddFolderButton({ currentFolder }) {
 
   return (
     <>
-      <Button onClick={openModal} variant="outline-success" size="sm">
-        <FontAwesomeIcon icon={faFolderPlus} />
+      <Button title="Create a Folder" onClick={openModal} variant="outline-success" size="sm">
+        <FontAwesomeIcon icon={faFolderPlus} size="2x" />
       </Button>
       <Modal show={open} onHide={closeModal}>
         <Form onSubmit={handleSubmit}>

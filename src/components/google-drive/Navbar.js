@@ -4,9 +4,9 @@ import { Link } from "react-router-dom"
 
 export default function NavbarComponent() {
   return (
-    <Navbar bg="light" expand="sm">
+    <Navbar bg="dark" variant="dark" expand="sm">
       <Navbar.Brand as={Link} to="/">
-        WDS Drive
+        Vir Drive
       </Navbar.Brand>
       <Nav>
         <Nav.Link as={Link} to="/user">
